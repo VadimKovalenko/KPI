@@ -7,6 +7,11 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141311', endColorstr='#141311',GradientType=0 ); /* IE6-9 */
 	padding-left: 0;
 	padding-right: 0;
+	margin-bottom: 25px;
+}
+
+.sprite {
+	background: url(../img/spritesheet.png);
 }
 
 .page-header--logo-wrap h1{
@@ -34,20 +39,80 @@
 .page-header .page-header--nav>ul {
 	margin: 0;
 	padding: 0;
+	font-size: 12px;
 }	
 
 .page-header .page-header--nav>ul>li {
 	list-style: none;
-}
-
-.page-header .page-header--nav>ul>li>a{
-	position: relative;
-    background: red; /* For browsers that do not support gradients */    
+	padding: 5px;
+	background: #2c83b5; /* For browsers that do not support gradients */    
     background: -webkit-radial-gradient(#2c83b5, #010437);
     float: right;
     height: 80px;
     width: 100px;
     color: #fff;
     text-align: center;
+}
+
+.page-header .page-header--nav>ul>li>a {
+	position: relative;
     text-decoration: none;
+    color: #fff;
 }    
+
+.page-header--main-nav--owner>a>span::before {
+	content: "";
+	background: url(../img/spritesheet.png);
+	background-position: -90px -5px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+    top: 7px;
+}
+
+.main-nav--curr--year,
+.main-nav--curr--date {
+	background-color: #fff;
+	color: $gray-darkest;
+	display: block;
+	line-height: 1.5;
+    border-radius: 15px;
+}
+
+.main-nav--calendar {
+	display: block;
+	margin-bottom: 16px;
+}
+
+.main-nav--curr--date {
+	margin-top: 17px;
+}
+
+.main-nav--calendar::before {
+	content: "";
+	background: url(../img/spritesheet.png);
+	display: block;
+	position: relative;
+    top: 7px;
+	width: 20px;
+	height: 20px;
+	background-position: -5px -5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.page-header--main-nav--days>.days-counter {
+	background: url(../img/spritesheet.png);
+	display: block;
+	position: relative;
+    padding-top: 16px;
+	width: 50px;
+	height: 50px;
+	background-position: -30px -5px;
+	margin-left: auto;
+	margin-right: auto;
+	color: $gray-darkest;
+	
+}
