@@ -3,6 +3,10 @@
 	margin-right: auto;
 }
 
+.kpi-main-wrap-row {
+	padding: 15px;
+}
+
 .kpi-main-wrap-container .safety-figure,
 .kpi-main-wrap-container .quality-figure,
 .kpi-main-wrap-container .delivery-figure,
@@ -16,7 +20,15 @@
 	display: inline-block;
 	vertical-align: top;
 	margin: 0;
-	margin-right: 25px;
+}
+
+.item-figure {
+	max-width: 150px;
+	display: inline-block;
+}
+
+.item-figure:first-child {
+	margin-left: 25px;
 }
 
 .kpi-main-wrap-container .innovation-figure>img {
@@ -29,7 +41,7 @@
 
 .kpi-main-wrap-row {
 	margin: 0 auto;
-	width: 1200px;
+	width: 1280px;
 }
 
 .main-chart-wrap {
@@ -42,6 +54,139 @@
 	height: auto;
 }
 
-.chart {
+.chart-round {
+	width: 100px;
+}
 
+.chart-round-descr {
+	position: relative;
+    top: -95px;
+    font-size: 12px;
+    width: 60px;
+    height: 60px;
+    margin-left: 14px;
+    background: #fafafa;
+    border: #ccc;
+    border-radius: 45px;
+    text-align: center;
+}
+
+.chart-round-wrap {
+    max-height: 95px;
+    width: 95px;
+    border: 3px solid $light-blue-1;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.chart-round-wrap::after {
+    content: "";
+    display: block;
+    background-image: url(../img/blue-corner.png);
+    background-size: cover;
+    width: 100px;
+    height: 27px;
+    position: relative;
+    top: -179px;
+    left: -6px;
+    z-index: -1;
+}	
+
+.chart-round {
+    top: -13px;
+    left: -8px;
+    position: relative;
+    width: 104px !important;
+    height: 104px !important;
+}
+
+.chart-round-descr-title {
+	color: $light-blue-1;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 8px;
+    line-height: 8px;
+}
+
+.chart-round-descr-count {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.calendar-table {
+	box-shadow: 0px 3px 3px #ccc;
+}
+
+/*.calendar-table::after {
+    bottom: 15px;
+    left: 74px;
+    width: 70px;
+    height: 5px;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+    right: 10px;
+}   
+
+.calendar-table::before {
+    bottom: 15px;
+    left: 2px;
+    width: 70px;
+    height: 5px;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.drop-shadow:before, .drop-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+}*/      
+
+.calendar-table thead tr{
+	text-align: center;
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 28px;
+	background: #000235; /* Old browsers */
+	background: -webkit-linear-gradient(left, #000235 0%, #2c86b9 50%, #000235 100%);
+	background: -o-linear-gradient(left, #000235 0%, #2c86b9 50%, #000235 100%);
+	background: linear-gradient(to right, #000235 0%, #2c86b9 50%, #000235 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000235', endColorstr='#000235',GradientType=1 ); /* IE6-9 */
+}
+
+.calendar-table tbody{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1f1f1+0,e6e6e5+100 */
+	background: #f1f1f1; /* Old browsers */
+	background: -moz-linear-gradient(left,  #f1f1f1 0%, #e6e6e5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #f1f1f1 0%,#e6e6e5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #f1f1f1 0%,#e6e6e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e6e6e5',GradientType=1 ); /* IE6-9 */
+}	
+
+.calendar-table tbody td {
+	border: 1px solid #ccc;
+	text-align: center;
+    width: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calendar-table tbody td.active {
+	background: #00cc00;
+	color: #fff;
 }

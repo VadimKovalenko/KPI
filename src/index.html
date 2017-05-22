@@ -1,672 +1,906 @@
-<!DOCTYPE html>
-<html class="no-js  page" lang="ru">
+    <!DOCTYPE html>
+    <html class="no-js  page" lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>NTH start project</title>
-  <meta name="description" content="">
-  @@include('_include/page_head.html')
-</head>
+    <head>
+      <meta charset="utf-8">
+      <title>NTH start project</title>
+      <meta name="description" content="">
+      @@include('_include/page_head.html')
+  </head>
 
-<body>
+  <body>
 
-  <div class="page__inner container-fluid">
+      <div class="page__inner container-fluid">
 
-    <div class="page__content">
-
-      @@include('blocks/page-header/page-header.html')
-
-      <main role="main kpi-main-wrap">
-          <div class="container-fluid kpi-main-wrap-container">
-            <div class="row kpi-main-wrap-row">
-              <div class="col-md-12 kpi-main--figure-wrap">
-                <figure class="safety-figure"><img src="img/safety-small.png" alt="safety"></figure>
-                <figure class="quality-figure"><img src="img/quality-small.png" alt="quality"></figure>
-                <figure class="delivery-figure"><img src="img/delivery-small.png" alt="delivery"></figure>
-                <figure class="innovation-figure"><img src="img/innovation-small.png" alt="innovation"></figure>
-                <figure class="cost-figure"><img src="img/cost-small.png" alt="coast"></figure>
-                <figure class="people-figure"><img src="img/people-small.png" alt="people"></figure>
-                <figure class="n-figure"><img src="img/n-small.png" alt="n"></figure>
-                <figure class="r-figure"><img src="img/r-small.png" alt="r"></figure>
-              </div>
+        <div class="page__content">
+          @@include('blocks/page-header/page-header.html')
+          <main role="main kpi-main-wrap">
+              <div class="container-fluid kpi-main-wrap-container">
+                <div class="row kpi-main-wrap-row">
+                  <div class="col-md-12 kpi-main--figure-wrap">
+                    <div class="item-figure">
+                        <h3>Safety</h3>
+                        <span>Safety of peers to peers</span>              
+                        <figure class="safety-figure"><img src="img/safety-small.png" alt="safety">
+                        </figure>
+                    </div>
+                    <div class="item-figure">
+                        <h3>Safety</h3>
+                        <span>Safety of peers to peers</span> <figure class="quality-figure"><img src="img/quality-small.png" alt="quality">
+                    </figure>
+                    </div>
+                    <div class="item-figure">
+                        <h3>Safety</h3>
+                        <span>Safety of peers to peers</span> <figure class="delivery-figure"><img src="img/delivery-small.png" alt="delivery">
+                        </figure>
+                    </div>
+                    <div class="item-figure">
+                        <h3>Safety</h3>
+                        <span>Safety of peers to peers</span> <figure class="innovation-figure"><img src="img/innovation-small.png" alt="innovation">
+                    </figure>
+                    </div>
+                    <div class="item-figure">    
+                        <h3>Safety</h3>
+                        <span>Safety of peers to peers</span>             
+                        <figure class="cost-figure"><img src="img/cost-small.png" alt="coast">
+                        </figure>
+                    </div>
+                    <div class="item-figure">
+                        <h3>Safety</h3>
+                        <span>Safety of peers to peers</span> 
+                        <figure class="people-figure"><img src="img/people-small.png" alt="people">
+                        </figure>
+                    </div>
+                    <div class="item-figure">
+                        <h3>Safety</h3>
+                        <span>Safety of peers to peers</span> 
+                        <figure class="n-figure"><img src="img/n-small.png" alt="n">
+                        </figure>
+                    </div>
+                    <div class="item-figure">
+                        <h3>Safety</h3>
+                        <span>Safety of peers to peers</span> 
+                        <figure class="r-figure"><img src="img/r-small.png" alt="r">
+                        </figure>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="container-fluid main-chart-wrap">
+        </div>
+        <div class="container-fluid main-chart-wrap">
             <div class="row">
               <!--<div id="curve_chart" style="width: 900px; height: 500px"></div>-->
               <div class="col-md-12">
                 <div class = "chart-wrap">
-                  <canvas id="myChart1" class="chart chart-1" width="150" height="auto"></canvas>
-                </div>
-                <div class = "chart-wrap">
-                  <canvas id="myChart2" class="chart chart-2" width="150" height="auto"></canvas>
-                </div>
-                <div class = "chart-wrap">
-                  <canvas id="myChart3" class="chart chart-3" width="150" height="auto"></canvas>
-                </div>
-                <div class = "chart-wrap">
-                  <canvas id="myChart4" class="chart chart-4" width="150" height="auto"></canvas>
-                </div>
-                <div class = "chart-wrap">
-                  <canvas id="myChart5" class="chart chart-5" width="150" height="auto"></canvas>
-                </div>
-                <div class = "chart-wrap">
-                  <canvas id="myChart6" class="chart chart-6" width="150" height="auto"></canvas>
-                </div>
-                <div class = "chart-wrap">
-                  <canvas id="myChart7" class="chart chart-7" width="150" height="auto"></canvas>
-                </div>
-                <div class = "chart-wrap">
-                  <canvas id="myChart8" class="chart chart-8" width="150" height="auto"></canvas>
-                </div>
-              </div>
-            </div>
+                    <canvas id="myChart1" class="chart chart-1" width="150" height="auto"></canvas>
+                    <div class = "chart-round-wrap">    
+                      <canvas id="myChart1_1" class="chart-round chart-1-1" width="150" height="auto"></canvas>
+                      <div class="chart-round-descr"><p class="chart-round-descr-title">counter measure</p><span class="chart-round-descr-count">0</span></div>
+                  </div>
+                  <table class="calendar-table drop-shadow">
+                    <thead>
+                        <tr>
+                            <th colspan="6">Fiscal month</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                      <tr>
+                          <td class = "active">1</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td>6</td>
+                      </tr>
+                      <tr>
+                          <td>7</td>
+                          <td>8</td>
+                          <td>9</td>
+                          <td>10</td>
+                          <td>11</td>
+                          <td>12</td>
+                      </tr>
+                  </tbody>
+              </table> 
           </div>
-      </main>
-
-    </div>
-
-    <div class="page__footer-wrapper">
-      @@include('blocks/page-footer/page-footer.html')
-    </div>
-
+          <div class = "chart-wrap">
+              <canvas id="myChart2" class="chart chart-2" width="150" height="auto"></canvas>
+              <div class = "chart-round-wrap">
+                  <canvas id="myChart1_2" class="chart-round chart-1-2" width="150" height="auto"></canvas>
+                  <div class="chart-round-descr"><p class="chart-round-descr-title">counter measure</p><span class="chart-round-descr-count">0</span></div>
+              </div>
+              @@include('blocks/calendar/calendar.html')
+          </div>
+          <div class = "chart-wrap">
+              <canvas id="myChart3" class="chart chart-3" width="150" height="auto"></canvas>
+              <div class = "chart-round-wrap">
+                  <canvas id="myChart1_3" class="chart-round chart-1-3" width="150" height="auto"></canvas>
+                  <div class="chart-round-descr"><p class="chart-round-descr-title">counter measure</p><span class="chart-round-descr-count">0</span></div>
+              </div>
+              @@include('blocks/calendar/calendar.html')
+          </div>
+          <div class = "chart-wrap">
+              <canvas id="myChart4" class="chart chart-4" width="150" height="auto"></canvas>
+              <div class = "chart-round-wrap">
+                  <canvas id="myChart1_4" class="chart-round chart-1-4" width="150" height="auto"></canvas>
+                  <div class="chart-round-descr"><p class="chart-round-descr-title">counter measure</p><span class="chart-round-descr-count">0</span></div>
+              </div>
+              @@include('blocks/calendar/calendar.html')
+          </div>
+          <div class = "chart-wrap">
+              <canvas id="myChart5" class="chart chart-5" width="150" height="auto"></canvas>
+              <div class = "chart-round-wrap">
+                  <canvas id="myChart1_5" class="chart-round chart-1-5" width="150" height="auto"></canvas>
+                  <div class="chart-round-descr"><p class="chart-round-descr-title">counter measure</p><span class="chart-round-descr-count">0</span></div>
+              </div>
+              @@include('blocks/calendar/calendar.html')
+          </div>
+          <div class = "chart-wrap">
+              <canvas id="myChart6" class="chart chart-6" width="150" height="auto"></canvas>
+              <div class = "chart-round-wrap">
+                  <canvas id="myChart1_6" class="chart-round chart-1-6" width="150" height="auto"></canvas>
+                  <div class="chart-round-descr"><p class="chart-round-descr-title">counter measure</p><span class="chart-round-descr-count">0</span></div>
+              </div>
+              @@include('blocks/calendar/calendar.html')
+          </div>
+          <div class = "chart-wrap">
+              <canvas id="myChart7" class="chart chart-7" width="150" height="auto"></canvas>
+              <div class = "chart-round-wrap">
+                  <canvas id="myChart1_7" class="chart-round chart-1-7" width="150" height="auto"></canvas>
+                  <div class="chart-round-descr"><p class="chart-round-descr-title">counter measure</p><span class="chart-round-descr-count">0</span></div>
+              </div>
+              @@include('blocks/calendar/calendar.html')
+          </div>
+          <div class = "chart-wrap">
+              <canvas id="myChart8" class="chart chart-8" width="150" height="auto"></canvas>
+              <div class = "chart-round-wrap">
+                  <canvas id="myChart1_8" class="chart-round chart-1-8" width="150" height="auto"></canvas>
+                  <div class="chart-round-descr"><p class="chart-round-descr-title">counter measure</p><span class="chart-round-descr-count">0</span></div>
+              </div>
+              @@include('blocks/calendar/calendar.html')
+          </div>
+      </div>
   </div>
+</div>
+</main>
 
-  @@include('_include/page_bottom.html')
+</div>
+
+<div class="page__footer-wrapper">
+  @@include('blocks/page-footer/page-footer.html')
+</div>
+
+</div>
+
+@@include('_include/page_bottom.html')
 
 <script>
-/*Color variables*/
-/*Chart-1*/
-/*orange*/
-var orange_color_1 = "#ff9900";
-var orange_color_2 = "#ffff99";
-/*blue*/
-var blue_color_1 = "#285179";
-var blue_color_2 = "#336699";
-/*Chart-2*/
-/*green*/
-var green_color_1 = "#aaaa55";
-var green_color_2 = "#cccc99";
-/*purple*/
-var purple_color_1 = "#9999cc";
-var purple_color_2 = "#6161af";
-/*Chart-3*/
-/*red*/
-var red_color_1 = "#990000";
-var red_color_2 = "#ff0000";
-/*grey*/
-var grey_color_1 = "#ccc";
-var grey_color_2 = "#666";
-/*Chart-4*/
-/*yellow*/
-var yellow_color_1 = "#a07001";
-var yellow_color_2 = "#cc9900";
-/*green*/
-var green_color_3 = "#017676";
-var green_color_4 = "#009999";
-/*Chart-5*/
-/*purple*/
-var purple_color_3 = "#993399";
-var purple_color_4 = "#c960ca";
-/*green*/
-var green_color_5 = "#4a7171";
-var green_color_6 = "#669999";
-/*Chart-6*/
-/*blue*/
-var blue_color_3 = "#3366cc";
-var blue_color_4 ="#8bafe2";
-/*grey*/
-var grey_color_3 = "#999";
-/*Chart-7*/
-/*light-blue*/
-var light_blue_color_1 = "#99ccff";
-var light_blue_color_2 = "#3599fd";
-/*green*/
-var green_color_7 = "#226666";
-var green_color_8 = "#339999";
-/*Chart-8*/
-/*light-green*/
-var light_blue_color_3 = "#00cc00";
-var light_blue_color_4 = "#006600";
-/*yellow*/
-var yellow_color_3 = "#993300";
-var yellow_color_4 = "#cc9933";
+    /*Color variables*/
+    /*Chart-1*/
+    /*orange*/
+    var orange_color_1 = "#ff9900";
+    var orange_color_2 = "#ffff99";
+    /*blue*/
+    var blue_color_1 = "#285179";
+    var blue_color_2 = "#336699";
+    /*Chart-2*/
+    /*green*/
+    var green_color_1 = "#aaaa55";
+    var green_color_2 = "#cccc99";
+    /*purple*/
+    var purple_color_1 = "#9999cc";
+    var purple_color_2 = "#6161af";
+    /*Chart-3*/
+    /*red*/
+    var red_color_1 = "#990000";
+    var red_color_2 = "#ff0000";
+    /*grey*/
+    var grey_color_1 = "#ccc";
+    var grey_color_2 = "#666";
+    /*Chart-4*/
+    /*yellow*/
+    var yellow_color_1 = "#a07001";
+    var yellow_color_2 = "#cc9900";
+    /*green*/
+    var green_color_3 = "#017676";
+    var green_color_4 = "#009999";
+    /*Chart-5*/
+    /*purple*/
+    var purple_color_3 = "#993399";
+    var purple_color_4 = "#c960ca";
+    /*green*/
+    var green_color_5 = "#4a7171";
+    var green_color_6 = "#669999";
+    /*Chart-6*/
+    /*blue*/
+    var blue_color_3 = "#3366cc";
+    var blue_color_4 ="#8bafe2";
+    /*grey*/
+    var grey_color_3 = "#999";
+    /*Chart-7*/
+    /*light-blue*/
+    var light_blue_color_1 = "#99ccff";
+    var light_blue_color_2 = "#3599fd";
+    /*green*/
+    var green_color_7 = "#226666";
+    var green_color_8 = "#339999";
+    /*Chart-8*/
+    /*light-green*/
+    var light_blue_color_3 = "#00cc00";
+    var light_blue_color_4 = "#006600";
+    /*yellow*/
+    var yellow_color_3 = "#993300";
+    var yellow_color_4 = "#cc9933";
 
-var ctx = document.getElementById("myChart1").getContext("2d");
-var ctx2 = document.getElementById("myChart2").getContext("2d");
-var ctx3 = document.getElementById("myChart3").getContext("2d");
-var ctx4 = document.getElementById("myChart4").getContext("2d");
-var ctx5 = document.getElementById("myChart5").getContext("2d");
-var ctx6 = document.getElementById("myChart6").getContext("2d");
-var ctx7 = document.getElementById("myChart7").getContext("2d");
-var ctx8 = document.getElementById("myChart8").getContext("2d");
+    var ctx = document.getElementById("myChart1").getContext("2d");
+    var ctx2 = document.getElementById("myChart2").getContext("2d");
+    var ctx3 = document.getElementById("myChart3").getContext("2d");
+    var ctx4 = document.getElementById("myChart4").getContext("2d");
+    var ctx5 = document.getElementById("myChart5").getContext("2d");
+    var ctx6 = document.getElementById("myChart6").getContext("2d");
+    var ctx7 = document.getElementById("myChart7").getContext("2d");
+    var ctx8 = document.getElementById("myChart8").getContext("2d");
 
-var gradient = ctx.createLinearGradient(30, 0, 250, 0);
-var gradient2 = ctx.createLinearGradient(30, 0, 250, 0);
+    var ctx_1_1 = document.getElementById("myChart1_1").getContext("2d");
+    var ctx_1_2 = document.getElementById("myChart1_2").getContext("2d");
+    var ctx_1_3 = document.getElementById("myChart1_3").getContext("2d");
+    var ctx_1_4 = document.getElementById("myChart1_4").getContext("2d");
+    var ctx_1_5 = document.getElementById("myChart1_5").getContext("2d");
+    var ctx_1_6 = document.getElementById("myChart1_6").getContext("2d");
+    var ctx_1_7 = document.getElementById("myChart1_7").getContext("2d");
+    var ctx_1_8 = document.getElementById("myChart1_8").getContext("2d");
 
-var gradient3 = ctx2.createLinearGradient(30, 0, 250, 0);
-var gradient4 = ctx2.createLinearGradient(30, 0, 250, 0);
+    var gradient = ctx.createLinearGradient(30, 0, 250, 0);
+    var gradient2 = ctx.createLinearGradient(30, 0, 250, 0);
 
-var gradient5 = ctx3.createLinearGradient(30, 0, 250, 0);
-var gradient6 = ctx3.createLinearGradient(30, 0, 250, 0);
+    var gradient3 = ctx2.createLinearGradient(30, 0, 250, 0);
+    var gradient4 = ctx2.createLinearGradient(30, 0, 250, 0);
 
-var gradient7 = ctx4.createLinearGradient(30, 0, 250, 0);
-var gradient8 = ctx4.createLinearGradient(30, 0, 250, 0);
+    var gradient5 = ctx3.createLinearGradient(30, 0, 250, 0);
+    var gradient6 = ctx3.createLinearGradient(30, 0, 250, 0);
 
-var gradient9 = ctx5.createLinearGradient(30, 0, 250, 0);
-var gradient10 = ctx5.createLinearGradient(30, 0, 250, 0);
+    var gradient7 = ctx4.createLinearGradient(30, 0, 250, 0);
+    var gradient8 = ctx4.createLinearGradient(30, 0, 250, 0);
 
-var gradient11 = ctx6.createLinearGradient(30, 0, 250, 0);
-var gradient12 = ctx6.createLinearGradient(30, 0, 250, 0);
+    var gradient9 = ctx5.createLinearGradient(30, 0, 250, 0);
+    var gradient10 = ctx5.createLinearGradient(30, 0, 250, 0);
 
-var gradient13 = ctx7.createLinearGradient(30, 0, 250, 0);
-var gradient14 = ctx7.createLinearGradient(30, 0, 250, 0);
+    var gradient11 = ctx6.createLinearGradient(30, 0, 250, 0);
+    var gradient12 = ctx6.createLinearGradient(30, 0, 250, 0);
 
-var gradient15 = ctx8.createLinearGradient(30, 0, 250, 0);
-var gradient16 = ctx8.createLinearGradient(30, 0, 250, 0);
+    var gradient13 = ctx7.createLinearGradient(30, 0, 250, 0);
+    var gradient14 = ctx7.createLinearGradient(30, 0, 250, 0);
+
+    var gradient15 = ctx8.createLinearGradient(30, 0, 250, 0);
+    var gradient16 = ctx8.createLinearGradient(30, 0, 250, 0);
 
 
-function createGrad(x, color_1, color_2) {
-  var colorArr = [];
-  colorArr.push(color_1, color_2);
-  for(i=0; i<=1; i+=0.09) {
-      if (i == 0) {
-      //console.log("Color " + color_1 + " added to " + i);
-      x.addColorStop(i, colorArr[0]);
+    function createGrad(x, color_1, color_2) {
+      var colorArr = [];
+      colorArr.push(color_1, color_2);
+      for(i=0; i<=1; i+=0.09) {
+          if (i == 0) {
+          //console.log("Color " + color_1 + " added to " + i);
+          x.addColorStop(i, colorArr[0]);
       }
       else if (i == 1) {
-      //console.log("Color " + color_1 + " added to " + i);
-      x.addColorStop(i, colorArr[1]);
+          //console.log("Color " + color_1 + " added to " + i);
+          x.addColorStop(i, colorArr[1]);
       }
       else {
         x.addColorStop(i, colorArr[1]);
         x.addColorStop(i, colorArr[0]);
         colorArr.reverse();        
-        //console.log("Color " + colorArr[1] + " added to " + i);
-      }
-  }
+            //console.log("Color " + colorArr[1] + " added to " + i);
+        }
+    }
 };
-//Ghart1
-createGrad(gradient, orange_color_1, orange_color_2);
-createGrad(gradient2, blue_color_1, blue_color_2);
-//Ghart2
-createGrad(gradient3, green_color_1, green_color_2);
-createGrad(gradient4, purple_color_1, purple_color_2);
-//Ghart3
-createGrad(gradient5, red_color_1, red_color_2);
-createGrad(gradient6, grey_color_1, grey_color_2);
-//Ghart4
-createGrad(gradient7, yellow_color_1, yellow_color_2);
-createGrad(gradient8, green_color_1, green_color_2);
-//Ghart5
-createGrad(gradient9, purple_color_3, purple_color_4);
-createGrad(gradient10, green_color_5, green_color_6);
-//Ghart6
-createGrad(gradient11, blue_color_3, blue_color_4);
-createGrad(gradient12, grey_color_3, grey_color_1);
-//Ghart7
-createGrad(gradient13, light_blue_color_1, light_blue_color_2);
-createGrad(gradient14, green_color_7, green_color_8);
-//Ghart8
-createGrad(gradient15, light_blue_color_3, light_blue_color_4);
-createGrad(gradient16, yellow_color_3, yellow_color_4);
+    //Ghart1
+    createGrad(gradient, orange_color_1, orange_color_2);
+    createGrad(gradient2, blue_color_1, blue_color_2);
+    //Ghart2
+    createGrad(gradient3, green_color_1, green_color_2);
+    createGrad(gradient4, purple_color_1, purple_color_2);
+    //Ghart3
+    createGrad(gradient5, red_color_1, red_color_2);
+    createGrad(gradient6, grey_color_1, grey_color_2);
+    //Ghart4
+    createGrad(gradient7, yellow_color_1, yellow_color_2);
+    createGrad(gradient8, green_color_1, green_color_2);
+    //Ghart5
+    createGrad(gradient9, purple_color_3, purple_color_4);
+    createGrad(gradient10, green_color_5, green_color_6);
+    //Ghart6
+    createGrad(gradient11, blue_color_3, blue_color_4);
+    createGrad(gradient12, grey_color_3, grey_color_1);
+    //Ghart7
+    createGrad(gradient13, light_blue_color_1, light_blue_color_2);
+    createGrad(gradient14, green_color_7, green_color_8);
+    //Ghart8
+    createGrad(gradient15, light_blue_color_3, light_blue_color_4);
+    createGrad(gradient16, yellow_color_3, yellow_color_4);
 
 
-var myChart1 = new Chart(ctx, {
-    type: 'line',
-    data: {
-        xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
-        datasets: [{
-            label: '',
-            data: [0, 40, 150, 180, 240, 320, 460, 320, 240, 360, 240, 480],
-            backgroundColor: gradient,
-            borderWidth: 1,
-            tension: 0
-        },{
-            label: '',
-            data: [0, 80, 220, 260, 320, 420, 559, 440, 320, 480, 370, 580],
-            backgroundColor: gradient2,
-            borderWidth: 1,
-            tension: 0 
-        }      
-      ]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
+    var myChart1 = new Chart(ctx, {
+        type: 'line',
+        data: {
+            xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
+            datasets: [{
+                label: '',
+                data: [0, 40, 150, 180, 240, 320, 460, 320, 240, 360, 240, 480],
+                backgroundColor: gradient,
+                borderWidth: 1,
+                tension: 0
+            },{
+                label: '',
+                data: [0, 80, 220, 260, 320, 420, 559, 440, 320, 480, 370, 580],
+                backgroundColor: gradient2,
+                borderWidth: 1,
+                tension: 0 
+            }      
+            ]
+        },
+        options: {
+          legend: {
+            display: false
+        },
+        tooltips: {
           callbacks: {
              label: function(tooltipItem) {
-                    return tooltipItem.yLabel;
-             }
-          }
-      },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true,
-                    stepSize: 80,
-                    min: 0,
-                    max: 560,
-                    fontSize: 10
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                    fontSize: 10,
-                    autoSkipPadding: 7
-                }
-            }],
-        },
-        fullWidth: false,
-        elements: { 
-          point: { hitRadius: 3,
-                   hoverRadius: 3,
-                   radius: 0
-          } 
-        } 
-    }
+                return tooltipItem.yLabel;
+            }
+        }
+    },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true,
+                stepSize: 80,
+                min: 0,
+                max: 560,
+                fontSize: 10
+            }
+        }],
+        xAxes: [{
+            ticks: {
+                fontSize: 10,
+                autoSkipPadding: 7
+            }
+        }],
+    },
+    fullWidth: false,
+    elements: { 
+      point: { hitRadius: 3,
+       hoverRadius: 3,
+       radius: 0
+   } 
+} 
+}
 });
 
-var myChart2 = new Chart(ctx2, {
-    type: 'line',
-    data: {
-        xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
-        datasets: [{
-            label: '',
-            data: [0, 20, 100, 110, 170, 250, 360, 250, 200, 300, 220, 410],
-            backgroundColor: gradient3,
-            borderWidth: 1,
-            tension: 0
-        },{
-            label: '',
-            data: [0, 60, 120, 130, 220, 300, 440, 270, 320, 330, 250, 430],
-            backgroundColor: gradient4,
-            borderWidth: 1,
-            tension: 0 
-        }      
-      ]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
+    var myChart2 = new Chart(ctx2, {
+        type: 'line',
+        data: {
+            xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
+            datasets: [{
+                label: '',
+                data: [0, 20, 100, 110, 170, 250, 360, 250, 200, 300, 220, 410],
+                backgroundColor: gradient3,
+                borderWidth: 1,
+                tension: 0
+            },{
+                label: '',
+                data: [0, 60, 120, 130, 220, 300, 440, 270, 320, 330, 250, 430],
+                backgroundColor: gradient4,
+                borderWidth: 1,
+                tension: 0 
+            }      
+            ]
+        },
+        options: {
+          legend: {
+            display: false
+        },
+        tooltips: {
           callbacks: {
              label: function(tooltipItem) {
-                    return tooltipItem.yLabel;
-             }
-          }
-      },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true,
-                    stepSize: 80,
-                    min: 0,
-                    max: 560,
-                    fontSize: 10
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                    fontSize: 10,
-                    autoSkipPadding: 7
-                }
-            }],
-        },
-        fullWidth: false,
-        elements: { 
-          point: { hitRadius: 3,
-                   hoverRadius: 3,
-                   radius: 0
-          } 
-        } 
-    }
+                return tooltipItem.yLabel;
+            }
+        }
+    },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true,
+                stepSize: 80,
+                min: 0,
+                max: 560,
+                fontSize: 10
+            }
+        }],
+        xAxes: [{
+            ticks: {
+                fontSize: 10,
+                autoSkipPadding: 7
+            }
+        }],
+    },
+    fullWidth: false,
+    elements: { 
+      point: { hitRadius: 3,
+       hoverRadius: 3,
+       radius: 0
+   } 
+} 
+}
 });
 
-var myChart3 = new Chart(ctx3, {
-    type: 'line',
-    data: {
-        xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
-        datasets: [{
-            label: '',
-            data: [0, 10, 50, 80, 120, 160, 260, 280, 230, 300, 180, 150],
-            backgroundColor: gradient5,
-            borderWidth: 1,
-            tension: 0
-        },{
-            label: '',
-            data: [0, 30, 70, 100, 150, 200, 290, 330, 200, 370, 210, 180],
-            backgroundColor: gradient6,
-            borderWidth: 1,
-            tension: 0 
-        }      
-      ]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
+    var myChart3 = new Chart(ctx3, {
+        type: 'line',
+        data: {
+            xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
+            datasets: [{
+                label: '',
+                data: [0, 10, 50, 80, 120, 160, 260, 280, 230, 300, 180, 150],
+                backgroundColor: gradient5,
+                borderWidth: 1,
+                tension: 0
+            },{
+                label: '',
+                data: [0, 30, 70, 100, 150, 200, 290, 330, 200, 370, 210, 180],
+                backgroundColor: gradient6,
+                borderWidth: 1,
+                tension: 0 
+            }      
+            ]
+        },
+        options: {
+          legend: {
+            display: false
+        },
+        tooltips: {
           callbacks: {
              label: function(tooltipItem) {
-                    return tooltipItem.yLabel;
-             }
-          }
-      },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true,
-                    stepSize: 80,
-                    min: 0,
-                    max: 560,
-                    fontSize: 10
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                    fontSize: 10,
-                    autoSkipPadding: 7
-                }
-            }],
-        },
-        fullWidth: false,
-        elements: { 
-          point: { hitRadius: 3,
-                   hoverRadius: 3,
-                   radius: 0
-          } 
-        } 
-    }
+                return tooltipItem.yLabel;
+            }
+        }
+    },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true,
+                stepSize: 80,
+                min: 0,
+                max: 560,
+                fontSize: 10
+            }
+        }],
+        xAxes: [{
+            ticks: {
+                fontSize: 10,
+                autoSkipPadding: 7
+            }
+        }],
+    },
+    fullWidth: false,
+    elements: { 
+      point: { hitRadius: 3,
+       hoverRadius: 3,
+       radius: 0
+   } 
+} 
+}
 });
 
-var myChart4 = new Chart(ctx4, {
-    type: 'line',
-    data: {
-        xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
-        datasets: [{
-            label: '',
-            data: [0, 40, 150, 180, 240, 320, 460, 320, 240, 360, 240, 480],
-            backgroundColor: gradient7,
-            borderWidth: 1,
-            tension: 0
-        },{
-            label: '',
-            data: [0, 80, 220, 260, 320, 420, 559, 440, 320, 480, 370, 580],
-            backgroundColor: gradient8,
-            borderWidth: 1,
-            tension: 0 
-        }      
-      ]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
+    var myChart4 = new Chart(ctx4, {
+        type: 'line',
+        data: {
+            xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
+            datasets: [{
+                label: '',
+                data: [0, 40, 150, 180, 240, 320, 460, 320, 240, 360, 240, 480],
+                backgroundColor: gradient7,
+                borderWidth: 1,
+                tension: 0
+            },{
+                label: '',
+                data: [0, 80, 220, 260, 320, 420, 559, 440, 320, 480, 370, 580],
+                backgroundColor: gradient8,
+                borderWidth: 1,
+                tension: 0 
+            }      
+            ]
+        },
+        options: {
+          legend: {
+            display: false
+        },
+        tooltips: {
           callbacks: {
              label: function(tooltipItem) {
-                    return tooltipItem.yLabel;
-             }
-          }
-      },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true,
-                    stepSize: 80,
-                    min: 0,
-                    max: 560,
-                    fontSize: 10
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                    fontSize: 10,
-                    autoSkipPadding: 7
-                }
-            }],
-        },
-        fullWidth: false,
-        elements: { 
-          point: { hitRadius: 3,
-                   hoverRadius: 3,
-                   radius: 0
-          } 
-        } 
-    }
+                return tooltipItem.yLabel;
+            }
+        }
+    },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true,
+                stepSize: 80,
+                min: 0,
+                max: 560,
+                fontSize: 10
+            }
+        }],
+        xAxes: [{
+            ticks: {
+                fontSize: 10,
+                autoSkipPadding: 7
+            }
+        }],
+    },
+    fullWidth: false,
+    elements: { 
+      point: { hitRadius: 3,
+       hoverRadius: 3,
+       radius: 0
+   } 
+} 
+}
 });
 
-var myChart5 = new Chart(ctx5, {
-    type: 'line',
-    data: {
-        xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
-        datasets: [{
-            label: '',
-            data: [0, 20, 50, 80, 110, 200, 230, 270, 170, 160, 90, 180],
-            backgroundColor: gradient9,
-            borderWidth: 1,
-            tension: 0
-        },{
-            label: '',
-            data: [0, 40, 80, 120, 190, 270, 300, 320, 210, 200, 110, 210],
-            backgroundColor: gradient10,
-            borderWidth: 1,
-            tension: 0 
-        }      
-      ]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
+    var myChart5 = new Chart(ctx5, {
+        type: 'line',
+        data: {
+            xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
+            datasets: [{
+                label: '',
+                data: [0, 20, 50, 80, 110, 200, 230, 270, 170, 160, 90, 180],
+                backgroundColor: gradient9,
+                borderWidth: 1,
+                tension: 0
+            },{
+                label: '',
+                data: [0, 40, 80, 120, 190, 270, 300, 320, 210, 200, 110, 210],
+                backgroundColor: gradient10,
+                borderWidth: 1,
+                tension: 0 
+            }      
+            ]
+        },
+        options: {
+          legend: {
+            display: false
+        },
+        tooltips: {
           callbacks: {
              label: function(tooltipItem) {
-                    return tooltipItem.yLabel;
-             }
-          }
-      },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true,
-                    stepSize: 80,
-                    min: 0,
-                    max: 560,
-                    fontSize: 10
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                    fontSize: 10,
-                    autoSkipPadding: 7
-                }
-            }],
-        },
-        fullWidth: false,
-        elements: { 
-          point: { hitRadius: 3,
-                   hoverRadius: 3,
-                   radius: 0
-          } 
-        } 
-    }
+                return tooltipItem.yLabel;
+            }
+        }
+    },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true,
+                stepSize: 80,
+                min: 0,
+                max: 560,
+                fontSize: 10
+            }
+        }],
+        xAxes: [{
+            ticks: {
+                fontSize: 10,
+                autoSkipPadding: 7
+            }
+        }],
+    },
+    fullWidth: false,
+    elements: { 
+      point: { hitRadius: 3,
+       hoverRadius: 3,
+       radius: 0
+   } 
+} 
+}
 });
 
-var myChart6 = new Chart(ctx6, {
-    type: 'line',
-    data: {
-        xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
-        datasets: [{
-            label: '',
-            data: [0, 10, 30, 80, 110, 190, 260, 120, 140, 260, 140, 280],
-            backgroundColor: gradient11,
-            borderWidth: 1,
-            tension: 0
-        },{
-            label: '',
-            data: [0, 20, 40, 100, 160, 250, 300, 160, 180, 280, 180, 300],
-            backgroundColor: gradient12,
-            borderWidth: 1,
-            tension: 0 
-        }      
-      ]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
+    var myChart6 = new Chart(ctx6, {
+        type: 'line',
+        data: {
+            xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
+            datasets: [{
+                label: '',
+                data: [0, 10, 30, 80, 110, 190, 260, 120, 140, 260, 140, 280],
+                backgroundColor: gradient11,
+                borderWidth: 1,
+                tension: 0
+            },{
+                label: '',
+                data: [0, 20, 40, 100, 160, 250, 300, 160, 180, 280, 180, 300],
+                backgroundColor: gradient12,
+                borderWidth: 1,
+                tension: 0 
+            }      
+            ]
+        },
+        options: {
+          legend: {
+            display: false
+        },
+        tooltips: {
           callbacks: {
              label: function(tooltipItem) {
-                    return tooltipItem.yLabel;
-             }
-          }
-      },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true,
-                    stepSize: 80,
-                    min: 0,
-                    max: 560,
-                    fontSize: 10
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                    fontSize: 10,
-                    autoSkipPadding: 7
-                }
-            }],
-        },
-        fullWidth: false,
-        elements: { 
-          point: { hitRadius: 3,
-                   hoverRadius: 3,
-                   radius: 0
-          } 
-        } 
-    }
+                return tooltipItem.yLabel;
+            }
+        }
+    },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true,
+                stepSize: 80,
+                min: 0,
+                max: 560,
+                fontSize: 10
+            }
+        }],
+        xAxes: [{
+            ticks: {
+                fontSize: 10,
+                autoSkipPadding: 7
+            }
+        }],
+    },
+    fullWidth: false,
+    elements: { 
+      point: { hitRadius: 3,
+       hoverRadius: 3,
+       radius: 0
+   } 
+} 
+}
 });
 
-var myChart7 = new Chart(ctx7, {
-    type: 'line',
-    data: {
-        xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
-        datasets: [{
-            label: '',
-            data: [0, 20, 50, 90, 240, 320, 190, 220, 200, 310, 200, 370],
-            backgroundColor: gradient13,
-            borderWidth: 1,
-            tension: 0
-        },{
-            label: '',
-            data: [0, 40, 80, 120, 290, 420, 230, 250, 250, 350, 230, 410],
-            backgroundColor: gradient14,
-            borderWidth: 1,
-            tension: 0 
-        }      
-      ]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
+    var myChart7 = new Chart(ctx7, {
+        type: 'line',
+        data: {
+            xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
+            datasets: [{
+                label: '',
+                data: [0, 20, 50, 90, 240, 320, 190, 220, 200, 310, 200, 370],
+                backgroundColor: gradient13,
+                borderWidth: 1,
+                tension: 0
+            },{
+                label: '',
+                data: [0, 40, 80, 120, 290, 420, 230, 250, 250, 350, 230, 410],
+                backgroundColor: gradient14,
+                borderWidth: 1,
+                tension: 0 
+            }      
+            ]
+        },
+        options: {
+          legend: {
+            display: false
+        },
+        tooltips: {
           callbacks: {
              label: function(tooltipItem) {
-                    return tooltipItem.yLabel;
-             }
-          }
-      },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true,
-                    stepSize: 80,
-                    min: 0,
-                    max: 560,
-                    fontSize: 10
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                    fontSize: 10,
-                    autoSkipPadding: 7
-                }
-            }],
-        },
-        fullWidth: false,
-        elements: { 
-          point: { hitRadius: 3,
-                   hoverRadius: 3,
-                   radius: 0
-          } 
-        } 
-    }
+                return tooltipItem.yLabel;
+            }
+        }
+    },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true,
+                stepSize: 80,
+                min: 0,
+                max: 560,
+                fontSize: 10
+            }
+        }],
+        xAxes: [{
+            ticks: {
+                fontSize: 10,
+                autoSkipPadding: 7
+            }
+        }],
+    },
+    fullWidth: false,
+    elements: { 
+      point: { hitRadius: 3,
+       hoverRadius: 3,
+       radius: 0
+   } 
+} 
+}
 });
 
-var myChart8 = new Chart(ctx8, {
-    type: 'line',
-    data: {
-        xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
-        datasets: [{
-            label: '',
-            data: [0, 20, 50, 110, 140, 190, 210, 280, 310, 390, 240, 410],
-            backgroundColor: gradient15,
-            borderWidth: 1,
-            tension: 0
-        },{
-            label: '',
-            data: [0, 80, 200, 200, 150, 220, 280, 330, 370, 430, 290, 480],
-            backgroundColor: gradient16,
-            borderWidth: 1,
-            tension: 0 
-        }      
-      ]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
+    var myChart8 = new Chart(ctx8, {
+        type: 'line',
+        data: {
+            xLabels: ["", "1", "4", "7", "10", "13", "16", "19", "22", "25", "28", ""],
+            datasets: [{
+                label: '',
+                data: [0, 20, 50, 110, 140, 190, 210, 280, 310, 390, 240, 410],
+                backgroundColor: gradient15,
+                borderWidth: 1,
+                tension: 0
+            },{
+                label: '',
+                data: [0, 80, 200, 200, 150, 220, 280, 330, 370, 430, 290, 480],
+                backgroundColor: gradient16,
+                borderWidth: 1,
+                tension: 0 
+            }      
+            ]
+        },
+        options: {
+          legend: {
+            display: false
+        },
+        tooltips: {
           callbacks: {
              label: function(tooltipItem) {
-                    return tooltipItem.yLabel;
-             }
-          }
-      },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true,
-                    stepSize: 80,
-                    min: 0,
-                    max: 560,
-                    fontSize: 10
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                    fontSize: 10,
-                    autoSkipPadding: 7
-                }
-            }],
-        },
-        fullWidth: false,
-        elements: { 
-          point: { hitRadius: 3,
-                   hoverRadius: 3,
-                   radius: 0
-          } 
-        } 
-    }
+                return tooltipItem.yLabel;
+            }
+        }
+    },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true,
+                stepSize: 80,
+                min: 0,
+                max: 560,
+                fontSize: 10
+            }
+        }],
+        xAxes: [{
+            ticks: {
+                fontSize: 10,
+                autoSkipPadding: 7
+            }
+        }],
+    },
+    fullWidth: false,
+    elements: { 
+      point: { hitRadius: 3,
+       hoverRadius: 3,
+       radius: 0
+   } 
+} 
+}
 });
+
+    var data_1 = {
+        datasets: [
+        {
+            data: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+            backgroundColor: [
+            "#00cc00",
+            "#00cc00",
+            "#00cc00"
+            ]
+        }]
+    };
+
+    var myPieChart = new Chart(ctx_1_1, {
+        type: 'pie',
+        data: data_1,
+        options: {
+            animation:{
+                animateScale:true
+            },
+            tooltips: {
+                enabled: false
+            },
+            borderColor: 'blue'   
+        },
+    });
+
+    var myPieChart = new Chart(ctx_1_2, {
+        type: 'pie',
+        data: data_1,
+        options: {
+            animation:{
+                animateScale:true
+            },
+            tooltips: {
+                enabled: false
+            },
+            borderColor: 'blue'   
+        },
+    });
+
+    var myPieChart = new Chart(ctx_1_3, {
+        type: 'pie',
+        data: data_1,
+        options: {
+            animation:{
+                animateScale:true
+            },
+            tooltips: {
+                enabled: false
+            },
+            borderColor: 'blue'   
+        },
+    });
+
+    var myPieChart = new Chart(ctx_1_4, {
+        type: 'pie',
+        data: data_1,
+        options: {
+            animation:{
+                animateScale:true
+            },
+            tooltips: {
+                enabled: false
+            },
+            borderColor: 'blue'   
+        },
+    });
+
+    var myPieChart = new Chart(ctx_1_5, {
+        type: 'pie',
+        data: data_1,
+        options: {
+            animation:{
+                animateScale:true
+            },
+            tooltips: {
+                enabled: false
+            },
+            borderColor: 'blue'   
+        },
+    });
+
+    var myPieChart = new Chart(ctx_1_6, {
+        type: 'pie',
+        data: data_1,
+        options: {
+            animation:{
+                animateScale:true
+            },
+            tooltips: {
+                enabled: false
+            },
+            borderColor: 'blue'   
+        },
+    });
+
+    var myPieChart = new Chart(ctx_1_7, {
+        type: 'pie',
+        data: data_1,
+        options: {
+            animation:{
+                animateScale:true
+            },
+            tooltips: {
+                enabled: false
+            },
+            borderColor: 'blue'   
+        },
+    });
+
+    var myPieChart = new Chart(ctx_1_8, {
+        type: 'pie',
+        data: data_1,
+        options: {
+            animation:{
+                animateScale:true
+            },
+            tooltips: {
+                enabled: false
+            },
+            borderColor: 'blue'   
+        },
+    });
+
+
 
 </script>
 </body>
